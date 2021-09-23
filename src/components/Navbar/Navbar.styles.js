@@ -3,9 +3,9 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-    background: #000;
+    background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
     height: 80px;
-    // margin-top: -80px;
+   margin-top: -80px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -15,7 +15,7 @@ export const Nav = styled.nav`
     z-index:10;
 
     @media screen and (max-width: 960px) {
-transition: .8s all ease;
+    transition: .8s all ease;
     }
 
 `;
@@ -23,10 +23,10 @@ transition: .8s all ease;
 export const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 5rem;
+  height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 1.5rem;
+  padding: 0 24px;
   max-width: 1100px;
 `;
 
@@ -36,7 +36,7 @@ export const NavLogo = styled(LinkR)`
   cursor: pointer;
   display: flex;
   align-items: center;
-  margin-left: 1.5rem;
+  margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
 `;
@@ -60,20 +60,23 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -1.2rem;
+  margin-right: -22px;
 
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 
+export const NavItem = styled.div`
+  height: 80px;
+`;
 export const NavLink = styled(LinkS)`
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 2.5rem;
+  height: 100%;
   cursor: pointer;
 
   &.active {
