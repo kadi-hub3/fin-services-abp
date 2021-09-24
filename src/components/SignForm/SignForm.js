@@ -18,9 +18,11 @@ import { Button } from "../Button";
 
 const SignForm = () => {
   const [clicked, setClicked] = useState(false);
+
   const handleClick = () => {
     setClicked(!clicked);
   };
+
   return (
     <FormContainer className={clicked ? "active" : null}>
       <FormWrapper>
@@ -34,7 +36,7 @@ const SignForm = () => {
             <Button onClick={handleClick}>Sign Up</Button>
           </BoxSignUp>
         </BlueBg>
-        <FormBox className={clicked ? "active" : null}>
+        <FormBox className="formBox">
           <FormBoxContainer className="signin">
             <SignInForm>
               <FormH3>Sign In</FormH3>

@@ -15,14 +15,18 @@ export const InfoWrapper = styled.div`
   height: 860px;
   width: 100%;
   max-width: 1100px;
-  padding: 0 24px 0 24px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
   justify-content: center;
 `;
 
 export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
+  grid-gap: 20px;
   align-items: center;
+  justify-content: center;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
 

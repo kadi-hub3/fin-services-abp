@@ -5,10 +5,23 @@ export const FormContainer = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #00bfa6;
+  background: #03bfa6;
   transition: 0.5s;
   &.active {
     background: #001922;
+  }
+  &.active .formBox {
+    left: 50%;
+  }
+
+  &.active .signup {
+    left: 0%;
+  }
+  &.active .signin {
+    left: 100%;
+  }
+  .signup {
+    left: -100%;
   }
 `;
 
@@ -69,15 +82,6 @@ export const FormBox = styled.div`
   box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
   transition: all 0.5s ease-in-out;
   overflow: hidden;
-  &.active {
-    left: 50%;
-  }
-  &.active .signup {
-    left: 0%;
-  }
-  &.active .signin {
-    left: -100%;
-  }
 `;
 
 export const FormBoxContainer = styled.div`
@@ -133,7 +137,6 @@ export const Input = styled.input`
 `;
 
 export const SignUpForm = styled.div`
-  left: 100%;
   input[type="submit"] {
     background: #001922;
     border: none;

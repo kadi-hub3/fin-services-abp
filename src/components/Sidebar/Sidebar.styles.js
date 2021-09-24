@@ -69,7 +69,7 @@ export const SidebarBtn = styled.div`
 
 export const SidebarBtnLink = styled(LinkR)`
   border-radius: 2.5rem;
-  background: #01bf71;
+  background: #00bfa6;
   white-space: nowrap;
   padding: 1rem 4rem;
   color: #010606;

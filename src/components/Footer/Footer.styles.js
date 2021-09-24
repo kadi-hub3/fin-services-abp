@@ -3,13 +3,15 @@ import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
   background: #101522;
+  display: flex;
+  justify-content: center;
 `;
 
 export const FooterWrap = styled.div`
   padding: 48px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  //   justify-content: center;
   align-items: center;
   max-width: 1000px;
 `;
@@ -25,7 +27,7 @@ export const FooterLinksContainer = styled.div`
 export const FooterLinks = styled.div`
   display: flex;
   flex-direction: column;
-  jusitfy-content: space-between;
+  justify-content: space-between;
   margin: 16px;
   text-align: left;
   width: 160px;
