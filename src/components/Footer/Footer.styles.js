@@ -46,7 +46,7 @@ export const FooterLink = styled(Link)`
   font-size: 14px;
 
   &:hover {
-    color: #01bf71;
+    color: #00bfa6;
     transition: 0.3s ease-out;
   }
 `;
@@ -96,5 +96,5 @@ export const SocialIcons = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 240px;
-  color: #fff;
+  stroke: #fff;
 `;

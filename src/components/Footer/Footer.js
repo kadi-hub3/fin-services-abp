@@ -1,6 +1,5 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import {
   FooterContainer,
   FooterWrap,
@@ -14,6 +13,11 @@ import {
   WebsiteRights,
   SocialIcons,
 } from "./Footer.styles";
+import UseAnimations from "react-useanimations";
+import facebook from "react-useanimations/lib/facebook";
+import instagram from "react-useanimations/lib/instagram";
+import github from "react-useanimations/lib/github";
+import linkedin from "react-useanimations/lib/linkedin";
 
 const Footer = () => {
   const scrollHome = () => {
@@ -63,10 +67,10 @@ const Footer = () => {
               All rights reserved.
             </WebsiteRights>
             <SocialIcons>
-              <FaFacebook />
-              <FaInstagram />
-              <FaTwitter />
-              <FaLinkedin />
+              <UseAnimations animation={facebook} size={40} />
+              <UseAnimations animation={instagram} size={40} />
+              <UseAnimations animation={linkedin} size={40} />
+              <UseAnimations animation={github} size={40} />
             </SocialIcons>
           </SocialMediaWrap>
         </SocialMedia>
