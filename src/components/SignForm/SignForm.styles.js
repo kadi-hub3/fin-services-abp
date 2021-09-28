@@ -177,7 +177,7 @@ export const Input = styled.input`
   }
 `;
 
-export const SignUpForm = styled.div`
+export const SignUpForm = styled.form`
   input[type="submit"] {
     background: #001922;
     border: none;
